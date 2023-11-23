@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Estoque</title>
+</head>
+<body>
+  <h1>Controle de Estoque</h1>
+  
+  <form id="addProductForm" method="POST" action="/addProduct">
+    <label for="NomeProduto">Nome do Produto:</label>
+    <input type="text" id="NomeProduto" required>
+    
+    <label for="DescricaoProduto">Descrição:</label>
+    <input type="text" id="DescricaoProduto">
+    
+    <label for="ValidadeProduto">Validade:</label>
+    <input type="date" id="ValidadeProduto">
+    
+    <button type="submit">Adicionar Produto</button>
+  </form>
+  
+  <ul id="productList"></ul>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
